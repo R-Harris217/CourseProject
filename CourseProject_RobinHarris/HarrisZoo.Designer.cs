@@ -34,6 +34,7 @@
             this.landAnimalsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.waterAnimalsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.feedingTablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +52,7 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
+            this.feedingTablesToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -86,6 +88,13 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // feedingTablesToolStripMenuItem
+            // 
+            this.feedingTablesToolStripMenuItem.Name = "feedingTablesToolStripMenuItem";
+            this.feedingTablesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.feedingTablesToolStripMenuItem.Text = "Feeding Tables";
+            this.feedingTablesToolStripMenuItem.Click += new System.EventHandler(this.feedingTablesToolStripMenuItem_Click);
+            // 
             // HarrisZoo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -110,6 +119,7 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem landAnimalsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem waterAnimalsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem feedingTablesToolStripMenuItem;
     }
 }
 

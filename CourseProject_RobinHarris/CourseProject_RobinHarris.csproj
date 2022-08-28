@@ -52,6 +52,12 @@
     <Compile Include="BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="FeedingTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedingTables.Designer.cs">
+      <DependentUpon>FeedingTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="WaterTracker.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedingTables.resx">
+      <DependentUpon>FeedingTables.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HarrisZoo.resx">
       <DependentUpon>HarrisZoo.cs</DependentUpon>

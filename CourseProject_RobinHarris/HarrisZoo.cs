@@ -42,5 +42,12 @@ namespace CourseProject_RobinHarris
             newWaterTracker.MdiParent = this;
             newWaterTracker.Show();
         }
+
+        private void feedingTablesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FeedingTables newFeedingTables = new FeedingTables();
+            newFeedingTables.MdiParent = this;
+            newFeedingTables.Show();
+        }
     }
 }

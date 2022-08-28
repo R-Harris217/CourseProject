@@ -3,23 +3,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CourseProject_RobinHarris
 {
-    public partial class BaseForm : Form
+    public partial class FeedingTables : CourseProject_RobinHarris.BaseForm
     {
-        public BaseForm()
+        public FeedingTables()
         {
             InitializeComponent();
-        }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }
