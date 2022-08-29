@@ -28,9 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.animalNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.animalFoodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.landAnimalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.feedingTableDataSet = new CourseProject_RobinHarris.FeedingTableDataSet();
+            this.landAnimalTableAdapter = new CourseProject_RobinHarris.FeedingTableDataSetTableAdapters.LandAnimalTableAdapter();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.waterAnimalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.feedingTableDataSet1 = new CourseProject_RobinHarris.FeedingTableDataSet1();
+            this.feedingTableDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.waterAnimalTableAdapter = new CourseProject_RobinHarris.FeedingTableDataSet1TableAdapters.WaterAnimalTableAdapter();
+            this.animalNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.animalFoodDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.landAnimalBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waterAnimalBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -63,17 +84,112 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Water Animals";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.animalNameDataGridViewTextBoxColumn,
+            this.animalFoodDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.landAnimalBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(60, 217);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(246, 225);
+            this.dataGridView1.TabIndex = 19;
+            // 
+            // animalNameDataGridViewTextBoxColumn
+            // 
+            this.animalNameDataGridViewTextBoxColumn.DataPropertyName = "AnimalName";
+            this.animalNameDataGridViewTextBoxColumn.HeaderText = "Animal Name";
+            this.animalNameDataGridViewTextBoxColumn.Name = "animalNameDataGridViewTextBoxColumn";
+            // 
+            // animalFoodDataGridViewTextBoxColumn
+            // 
+            this.animalFoodDataGridViewTextBoxColumn.DataPropertyName = "AnimalFood";
+            this.animalFoodDataGridViewTextBoxColumn.HeaderText = "Animal Food";
+            this.animalFoodDataGridViewTextBoxColumn.Name = "animalFoodDataGridViewTextBoxColumn";
+            // 
+            // landAnimalBindingSource
+            // 
+            this.landAnimalBindingSource.DataMember = "LandAnimal";
+            this.landAnimalBindingSource.DataSource = this.feedingTableDataSet;
+            // 
+            // feedingTableDataSet
+            // 
+            this.feedingTableDataSet.DataSetName = "FeedingTableDataSet";
+            this.feedingTableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // landAnimalTableAdapter
+            // 
+            this.landAnimalTableAdapter.ClearBeforeFill = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.animalNameDataGridViewTextBoxColumn1,
+            this.animalFoodDataGridViewTextBoxColumn1});
+            this.dataGridView2.DataSource = this.waterAnimalBindingSource;
+            this.dataGridView2.Location = new System.Drawing.Point(447, 217);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(246, 225);
+            this.dataGridView2.TabIndex = 20;
+            // 
+            // waterAnimalBindingSource
+            // 
+            this.waterAnimalBindingSource.DataMember = "WaterAnimal";
+            this.waterAnimalBindingSource.DataSource = this.feedingTableDataSet1;
+            // 
+            // feedingTableDataSet1
+            // 
+            this.feedingTableDataSet1.DataSetName = "FeedingTableDataSet1";
+            this.feedingTableDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // feedingTableDataSetBindingSource
+            // 
+            this.feedingTableDataSetBindingSource.DataSource = this.feedingTableDataSet;
+            this.feedingTableDataSetBindingSource.Position = 0;
+            // 
+            // waterAnimalTableAdapter
+            // 
+            this.waterAnimalTableAdapter.ClearBeforeFill = true;
+            // 
+            // animalNameDataGridViewTextBoxColumn1
+            // 
+            this.animalNameDataGridViewTextBoxColumn1.DataPropertyName = "AnimalName";
+            this.animalNameDataGridViewTextBoxColumn1.HeaderText = "Animal Name";
+            this.animalNameDataGridViewTextBoxColumn1.Name = "animalNameDataGridViewTextBoxColumn1";
+            // 
+            // animalFoodDataGridViewTextBoxColumn1
+            // 
+            this.animalFoodDataGridViewTextBoxColumn1.DataPropertyName = "AnimalFood";
+            this.animalFoodDataGridViewTextBoxColumn1.HeaderText = "Animal Food";
+            this.animalFoodDataGridViewTextBoxColumn1.Name = "animalFoodDataGridViewTextBoxColumn1";
+            // 
             // FeedingTables
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 538);
+            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Name = "FeedingTables";
+            this.Load += new System.EventHandler(this.FeedingTables_Load);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.dataGridView1, 0);
+            this.Controls.SetChildIndex(this.dataGridView2, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.landAnimalBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.waterAnimalBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -84,5 +200,18 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private FeedingTableDataSet feedingTableDataSet;
+        private System.Windows.Forms.BindingSource landAnimalBindingSource;
+        private FeedingTableDataSetTableAdapters.LandAnimalTableAdapter landAnimalTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.BindingSource feedingTableDataSetBindingSource;
+        private FeedingTableDataSet1 feedingTableDataSet1;
+        private System.Windows.Forms.BindingSource waterAnimalBindingSource;
+        private FeedingTableDataSet1TableAdapters.WaterAnimalTableAdapter waterAnimalTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn animalNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn animalFoodDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn animalNameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn animalFoodDataGridViewTextBoxColumn1;
     }
 }

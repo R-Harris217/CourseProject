@@ -51,5 +51,12 @@ namespace CourseProject_RobinHarris
                 }
             }
         }
+
+        private void WaterTracker_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'feedingTableDataSet1.WaterAnimal' table. You can move, or remove it, as needed.
+            this.waterAnimalTableAdapter.Fill(this.feedingTableDataSet1.WaterAnimal);
+
+        }
     }
 }

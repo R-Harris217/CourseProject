@@ -51,5 +51,12 @@ namespace CourseProject_RobinHarris
                 }
             }
         }
+
+        private void LandTracker_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'feedingTableDataSet.LandAnimal' table. You can move, or remove it, as needed.
+            this.landAnimalTableAdapter.Fill(this.feedingTableDataSet.LandAnimal);
+
+        }
     }
 }
