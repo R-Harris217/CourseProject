@@ -34,6 +34,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.navigateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newTrackerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.landAnimalsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.waterAnimalsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.feedingTablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +65,8 @@
             // 
             this.menuStrip1.AllowMerge = false;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.navigateToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -78,9 +84,48 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // navigateToolStripMenuItem
+            // 
+            this.navigateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newTrackerToolStripMenuItem,
+            this.feedingTablesToolStripMenuItem});
+            this.navigateToolStripMenuItem.Name = "navigateToolStripMenuItem";
+            this.navigateToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.navigateToolStripMenuItem.Text = "Navigate";
+            // 
+            // newTrackerToolStripMenuItem
+            // 
+            this.newTrackerToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.landAnimalsToolStripMenuItem,
+            this.waterAnimalsToolStripMenuItem});
+            this.newTrackerToolStripMenuItem.Name = "newTrackerToolStripMenuItem";
+            this.newTrackerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newTrackerToolStripMenuItem.Text = "New Tracker";
+            // 
+            // landAnimalsToolStripMenuItem
+            // 
+            this.landAnimalsToolStripMenuItem.Name = "landAnimalsToolStripMenuItem";
+            this.landAnimalsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.landAnimalsToolStripMenuItem.Text = "Land Animals";
+            this.landAnimalsToolStripMenuItem.Click += new System.EventHandler(this.landAnimalsToolStripMenuItem_Click);
+            // 
+            // waterAnimalsToolStripMenuItem
+            // 
+            this.waterAnimalsToolStripMenuItem.Name = "waterAnimalsToolStripMenuItem";
+            this.waterAnimalsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.waterAnimalsToolStripMenuItem.Text = "Water Animals";
+            this.waterAnimalsToolStripMenuItem.Click += new System.EventHandler(this.waterAnimalsToolStripMenuItem_Click);
+            // 
+            // feedingTablesToolStripMenuItem
+            // 
+            this.feedingTablesToolStripMenuItem.Name = "feedingTablesToolStripMenuItem";
+            this.feedingTablesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.feedingTablesToolStripMenuItem.Text = "Feeding Tables";
+            this.feedingTablesToolStripMenuItem.Click += new System.EventHandler(this.feedingTablesToolStripMenuItem_Click);
             // 
             // BaseForm
             // 
@@ -107,5 +152,10 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem navigateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem newTrackerToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem landAnimalsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem waterAnimalsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem feedingTablesToolStripMenuItem;
     }
 }
