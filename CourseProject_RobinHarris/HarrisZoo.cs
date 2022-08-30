@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -48,6 +49,16 @@ namespace CourseProject_RobinHarris
             FeedingTables newFeedingTables = new FeedingTables();
             newFeedingTables.MdiParent = this;
             newFeedingTables.Show();
+        }
+
+        public void GetPrintControl()
+        {
+            printDialog1.Document = printDocument1;
+            DialogResult dr = printDialog1.ShowDialog();
+            if (dr == DialogResult.OK)
+            {
+                printDocument1.Print();
+            }
         }
     }
 }

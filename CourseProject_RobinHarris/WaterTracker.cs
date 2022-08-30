@@ -58,5 +58,11 @@ namespace CourseProject_RobinHarris
             this.waterAnimalTableAdapter.Fill(this.feedingTableDataSet1.WaterAnimal);
 
         }
+
+        private void printButton_Click(object sender, EventArgs e)
+        {
+            HarrisZoo form1 = (HarrisZoo)this.ParentForm;
+            form1.GetPrintControl();
+        }
     }
 }

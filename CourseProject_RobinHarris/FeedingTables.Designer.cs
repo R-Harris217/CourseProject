@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FeedingTables));
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -39,12 +40,15 @@
             this.feedingTableDataSet = new CourseProject_RobinHarris.FeedingTableDataSet();
             this.landAnimalTableAdapter = new CourseProject_RobinHarris.FeedingTableDataSetTableAdapters.LandAnimalTableAdapter();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.animalNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.animalFoodDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.waterAnimalBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.feedingTableDataSet1 = new CourseProject_RobinHarris.FeedingTableDataSet1();
             this.feedingTableDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.waterAnimalTableAdapter = new CourseProject_RobinHarris.FeedingTableDataSet1TableAdapters.WaterAnimalTableAdapter();
-            this.animalNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.animalFoodDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.printButton = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.landAnimalBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSet)).BeginInit();
@@ -136,6 +140,18 @@
             this.dataGridView2.Size = new System.Drawing.Size(246, 225);
             this.dataGridView2.TabIndex = 20;
             // 
+            // animalNameDataGridViewTextBoxColumn1
+            // 
+            this.animalNameDataGridViewTextBoxColumn1.DataPropertyName = "AnimalName";
+            this.animalNameDataGridViewTextBoxColumn1.HeaderText = "Animal Name";
+            this.animalNameDataGridViewTextBoxColumn1.Name = "animalNameDataGridViewTextBoxColumn1";
+            // 
+            // animalFoodDataGridViewTextBoxColumn1
+            // 
+            this.animalFoodDataGridViewTextBoxColumn1.DataPropertyName = "AnimalFood";
+            this.animalFoodDataGridViewTextBoxColumn1.HeaderText = "Animal Food";
+            this.animalFoodDataGridViewTextBoxColumn1.Name = "animalFoodDataGridViewTextBoxColumn1";
+            // 
             // waterAnimalBindingSource
             // 
             this.waterAnimalBindingSource.DataMember = "WaterAnimal";
@@ -155,22 +171,31 @@
             // 
             this.waterAnimalTableAdapter.ClearBeforeFill = true;
             // 
-            // animalNameDataGridViewTextBoxColumn1
+            // printButton
             // 
-            this.animalNameDataGridViewTextBoxColumn1.DataPropertyName = "AnimalName";
-            this.animalNameDataGridViewTextBoxColumn1.HeaderText = "Animal Name";
-            this.animalNameDataGridViewTextBoxColumn1.Name = "animalNameDataGridViewTextBoxColumn1";
+            this.printButton.Location = new System.Drawing.Point(60, 483);
+            this.printButton.Name = "printButton";
+            this.printButton.Size = new System.Drawing.Size(75, 23);
+            this.printButton.TabIndex = 21;
+            this.printButton.Text = "&Print";
+            this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.printButton_Click);
             // 
-            // animalFoodDataGridViewTextBoxColumn1
+            // printPreviewDialog1
             // 
-            this.animalFoodDataGridViewTextBoxColumn1.DataPropertyName = "AnimalFood";
-            this.animalFoodDataGridViewTextBoxColumn1.HeaderText = "Animal Food";
-            this.animalFoodDataGridViewTextBoxColumn1.Name = "animalFoodDataGridViewTextBoxColumn1";
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
             // 
             // FeedingTables
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(800, 538);
+            this.Controls.Add(this.printButton);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label4);
@@ -183,6 +208,7 @@
             this.Controls.SetChildIndex(this.label4, 0);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
             this.Controls.SetChildIndex(this.dataGridView2, 0);
+            this.Controls.SetChildIndex(this.printButton, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.landAnimalBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSet)).EndInit();
@@ -213,5 +239,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn animalFoodDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn animalNameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn animalFoodDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Button printButton;
+        private System.Drawing.Printing.PrintDocument printDocument1;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Text;
 using System.Windows.Forms;
 
@@ -10,6 +11,7 @@ namespace CourseProject_RobinHarris
 {
     public partial class LandTracker : CourseProject_RobinHarris.Tracker
     {
+        Bitmap memoryImage;
         public LandTracker()
         {
             InitializeComponent();
@@ -21,8 +23,7 @@ namespace CourseProject_RobinHarris
         }
 
         private void TreeView_DragEnter(object sender, System.Windows.Forms.DragEventArgs e)
-        {
-            // check to be sure that the drag content is the correct type for this control 
+        { 
             if (e.Data.GetDataPresent("System.Windows.Forms.TreeNode"))
                 e.Effect = DragDropEffects.Move;
             else
@@ -45,8 +46,7 @@ namespace CourseProject_RobinHarris
                 {
                     DestinationNode.Nodes.Add((TreeNode)NewNode.Clone());
                     DestinationNode.Expand();
-
-                    // remove original node 
+ 
                     NewNode.Remove();
                 }
             }
@@ -54,9 +54,15 @@ namespace CourseProject_RobinHarris
 
         private void LandTracker_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'feedingTableDataSet.LandAnimal' table. You can move, or remove it, as needed.
             this.landAnimalTableAdapter.Fill(this.feedingTableDataSet.LandAnimal);
 
         }
+
+        private void printButton_Click(object sender, EventArgs e)
+        {
+            HarrisZoo form1 = (HarrisZoo)this.ParentForm;
+            form1.GetPrintControl();
+        }
     }
+  
 }

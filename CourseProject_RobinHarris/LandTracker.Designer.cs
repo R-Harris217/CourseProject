@@ -29,22 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("Carnivore");
-            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("Herbivore");
-            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("Omnivore");
-            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("Lions");
-            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("Tigers");
-            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("Carnivore", new System.Windows.Forms.TreeNode[] {
-            treeNode48,
-            treeNode49});
-            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("Koalas");
-            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("Elephants");
-            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("Herbivore", new System.Windows.Forms.TreeNode[] {
-            treeNode51,
-            treeNode52});
-            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("Bears");
-            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("Omnivore", new System.Windows.Forms.TreeNode[] {
-            treeNode54});
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("Carnivore");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Herbivore");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("Omnivore");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("Lions");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("Tigers");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("Carnivore", new System.Windows.Forms.TreeNode[] {
+            treeNode4,
+            treeNode5});
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("Koalas");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("Elephants");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("Herbivore", new System.Windows.Forms.TreeNode[] {
+            treeNode7,
+            treeNode8});
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("Bears");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("Omnivore", new System.Windows.Forms.TreeNode[] {
+            treeNode10});
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LandTracker));
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -53,14 +54,17 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.feedingTableDataSet = new CourseProject_RobinHarris.FeedingTableDataSet();
-            this.landAnimalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.landAnimalTableAdapter = new CourseProject_RobinHarris.FeedingTableDataSetTableAdapters.LandAnimalTableAdapter();
             this.animalNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.animalFoodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.landAnimalBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.feedingTableDataSet = new CourseProject_RobinHarris.FeedingTableDataSet();
+            this.landAnimalTableAdapter = new CourseProject_RobinHarris.FeedingTableDataSetTableAdapters.LandAnimalTableAdapter();
+            this.printButton = new System.Windows.Forms.Button();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.landAnimalBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -108,16 +112,16 @@
             this.treeView2.AllowDrop = true;
             this.treeView2.Location = new System.Drawing.Point(608, 272);
             this.treeView2.Name = "treeView2";
-            treeNode45.Name = "Node0";
-            treeNode45.Text = "Carnivore";
-            treeNode46.Name = "Node1";
-            treeNode46.Text = "Herbivore";
-            treeNode47.Name = "Node2";
-            treeNode47.Text = "Omnivore";
+            treeNode1.Name = "Node0";
+            treeNode1.Text = "Carnivore";
+            treeNode2.Name = "Node1";
+            treeNode2.Text = "Herbivore";
+            treeNode3.Name = "Node2";
+            treeNode3.Text = "Omnivore";
             this.treeView2.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode45,
-            treeNode46,
-            treeNode47});
+            treeNode1,
+            treeNode2,
+            treeNode3});
             this.treeView2.Size = new System.Drawing.Size(180, 152);
             this.treeView2.TabIndex = 21;
             this.treeView2.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.TreeView_ItemDrag);
@@ -129,26 +133,26 @@
             this.treeView1.AllowDrop = true;
             this.treeView1.Location = new System.Drawing.Point(301, 272);
             this.treeView1.Name = "treeView1";
-            treeNode48.Name = "Node3";
-            treeNode48.Text = "Lions";
-            treeNode49.Name = "Node4";
-            treeNode49.Text = "Tigers";
-            treeNode50.Name = "Node0";
-            treeNode50.Text = "Carnivore";
-            treeNode51.Name = "Node5";
-            treeNode51.Text = "Koalas";
-            treeNode52.Name = "Node6";
-            treeNode52.Text = "Elephants";
-            treeNode53.Name = "Node1";
-            treeNode53.Text = "Herbivore";
-            treeNode54.Name = "Node7";
-            treeNode54.Text = "Bears";
-            treeNode55.Name = "Node2";
-            treeNode55.Text = "Omnivore";
+            treeNode4.Name = "Node3";
+            treeNode4.Text = "Lions";
+            treeNode5.Name = "Node4";
+            treeNode5.Text = "Tigers";
+            treeNode6.Name = "Node0";
+            treeNode6.Text = "Carnivore";
+            treeNode7.Name = "Node5";
+            treeNode7.Text = "Koalas";
+            treeNode8.Name = "Node6";
+            treeNode8.Text = "Elephants";
+            treeNode9.Name = "Node1";
+            treeNode9.Text = "Herbivore";
+            treeNode10.Name = "Node7";
+            treeNode10.Text = "Bears";
+            treeNode11.Name = "Node2";
+            treeNode11.Text = "Omnivore";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode50,
-            treeNode53,
-            treeNode55});
+            treeNode6,
+            treeNode9,
+            treeNode11});
             this.treeView1.Size = new System.Drawing.Size(180, 152);
             this.treeView1.TabIndex = 20;
             this.treeView1.ItemDrag += new System.Windows.Forms.ItemDragEventHandler(this.TreeView_ItemDrag);
@@ -178,20 +182,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(246, 225);
             this.dataGridView2.TabIndex = 28;
             // 
-            // feedingTableDataSet
-            // 
-            this.feedingTableDataSet.DataSetName = "FeedingTableDataSet";
-            this.feedingTableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // landAnimalBindingSource
-            // 
-            this.landAnimalBindingSource.DataMember = "LandAnimal";
-            this.landAnimalBindingSource.DataSource = this.feedingTableDataSet;
-            // 
-            // landAnimalTableAdapter
-            // 
-            this.landAnimalTableAdapter.ClearBeforeFill = true;
-            // 
             // animalNameDataGridViewTextBoxColumn
             // 
             this.animalNameDataGridViewTextBoxColumn.DataPropertyName = "AnimalName";
@@ -204,10 +194,45 @@
             this.animalFoodDataGridViewTextBoxColumn.HeaderText = "Animal Food";
             this.animalFoodDataGridViewTextBoxColumn.Name = "animalFoodDataGridViewTextBoxColumn";
             // 
+            // landAnimalBindingSource
+            // 
+            this.landAnimalBindingSource.DataMember = "LandAnimal";
+            this.landAnimalBindingSource.DataSource = this.feedingTableDataSet;
+            // 
+            // feedingTableDataSet
+            // 
+            this.feedingTableDataSet.DataSetName = "FeedingTableDataSet";
+            this.feedingTableDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // landAnimalTableAdapter
+            // 
+            this.landAnimalTableAdapter.ClearBeforeFill = true;
+            // 
+            // printButton
+            // 
+            this.printButton.Location = new System.Drawing.Point(301, 474);
+            this.printButton.Name = "printButton";
+            this.printButton.Size = new System.Drawing.Size(75, 23);
+            this.printButton.TabIndex = 30;
+            this.printButton.Text = "&Print";
+            this.printButton.UseVisualStyleBackColor = true;
+            this.printButton.Click += new System.EventHandler(this.printButton_Click);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
             // LandTracker
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(800, 537);
+            this.Controls.Add(this.printButton);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label7);
@@ -227,9 +252,10 @@
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.dataGridView2, 0);
             this.Controls.SetChildIndex(this.label9, 0);
+            this.Controls.SetChildIndex(this.printButton, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.landAnimalBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.feedingTableDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,5 +276,8 @@
         private FeedingTableDataSetTableAdapters.LandAnimalTableAdapter landAnimalTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn animalNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn animalFoodDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button printButton;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }

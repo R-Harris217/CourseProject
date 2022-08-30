@@ -33,8 +33,10 @@
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.landAnimalsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.waterAnimalsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.feedingTablesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +66,7 @@
             this.landAnimalsToolStripMenuItem,
             this.waterAnimalsToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.newToolStripMenuItem.Text = "New Tracker";
             // 
             // landAnimalsToolStripMenuItem
@@ -81,19 +83,23 @@
             this.waterAnimalsToolStripMenuItem.Text = "Water Animals";
             this.waterAnimalsToolStripMenuItem.Click += new System.EventHandler(this.waterAnimalsToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // feedingTablesToolStripMenuItem
             // 
             this.feedingTablesToolStripMenuItem.Name = "feedingTablesToolStripMenuItem";
-            this.feedingTablesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.feedingTablesToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
             this.feedingTablesToolStripMenuItem.Text = "Feeding Tables";
             this.feedingTablesToolStripMenuItem.Click += new System.EventHandler(this.feedingTablesToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(151, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // printDialog1
+            // 
+            this.printDialog1.UseEXDialog = true;
             // 
             // HarrisZoo
             // 
@@ -120,6 +126,8 @@
         private System.Windows.Forms.ToolStripMenuItem landAnimalsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem waterAnimalsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem feedingTablesToolStripMenuItem;
+        private System.Windows.Forms.PrintDialog printDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
 

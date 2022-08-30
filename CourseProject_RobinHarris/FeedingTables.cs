@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Printing;
 using System.Text;
 using System.Windows.Forms;
 
@@ -10,6 +11,7 @@ namespace CourseProject_RobinHarris
 {
     public partial class FeedingTables : CourseProject_RobinHarris.BaseForm
     {
+        Bitmap memoryImage;
         public FeedingTables()
         {
             InitializeComponent();
@@ -23,5 +25,12 @@ namespace CourseProject_RobinHarris
             this.landAnimalTableAdapter.Fill(this.feedingTableDataSet.LandAnimal);
 
         }
+
+        private void printButton_Click(object sender, EventArgs e)
+        {
+            HarrisZoo form1 = (HarrisZoo)this.ParentForm;
+            form1.GetPrintControl();
+        }
+
     }
 }
