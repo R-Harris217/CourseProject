@@ -11,7 +11,6 @@ namespace CourseProject_RobinHarris
 {
     public partial class LandTracker : CourseProject_RobinHarris.Tracker
     {
-        Bitmap memoryImage;
         public LandTracker()
         {
             InitializeComponent();

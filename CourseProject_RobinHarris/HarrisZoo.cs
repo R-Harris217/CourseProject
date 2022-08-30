@@ -23,13 +23,6 @@ namespace CourseProject_RobinHarris
             Close();
         }
 
-        //private void newToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    Tracker newTracker = new Tracker();
-        //    newTracker.MdiParent = this;
-        //    newTracker.Show();
-        //}
-
         private void landAnimalsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LandTracker newLandTracker = new LandTracker();

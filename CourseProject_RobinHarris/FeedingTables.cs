@@ -11,7 +11,6 @@ namespace CourseProject_RobinHarris
 {
     public partial class FeedingTables : CourseProject_RobinHarris.BaseForm
     {
-        Bitmap memoryImage;
         public FeedingTables()
         {
             InitializeComponent();

@@ -46,7 +46,6 @@ namespace CourseProject_RobinHarris
                     DestinationNode.Nodes.Add((TreeNode)NewNode.Clone());
                     DestinationNode.Expand();
 
-                    // remove original node 
                     NewNode.Remove();
                 }
             }
